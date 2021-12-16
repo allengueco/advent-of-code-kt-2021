@@ -1,6 +1,5 @@
 import java.io.File
 import java.math.BigInteger
-import java.nio.charset.Charset
 import java.security.MessageDigest
 
 private fun getFile(name: String) = File("src", "$name.txt")
@@ -9,6 +8,11 @@ private fun getFile(name: String) = File("src", "$name.txt")
  * Reads lines from the given input txt file.
  */
 fun readInput(name: String) = getFile(name).readLines()
+
+/**
+ * Reads the file raw
+ */
+fun readText(name: String) = getFile(name).readText()
 
 /**
  * Reads lines and parse into int
